@@ -1,0 +1,2 @@
+<?php
+// Controleur d'accueil
