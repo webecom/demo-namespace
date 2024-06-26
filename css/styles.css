@@ -1,0 +1,13 @@
+.contact {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid grey;
+}
+
+p.titre {
+    font-size: 140%;
+}
+
+label {
+    display: block;
+}

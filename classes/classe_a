@@ -1,0 +1,45 @@
+<?php 
+
+// Classe de démonstration dans un espace de noms
+
+
+namespace utilitaires\espace1;
+// L'instruction ci dessus indqiue que à chaque fois que l'on va adresser une classe 
+//    new classe();
+//    classe::...
+//    class classe {}
+// en fait on ira chercher la classe \utilitaires\espace1\classe
+// C'est une instruction qui s'applique au fichier
+
+
+// ON peut donner des raccourcis et des alias
+use \PHPMailer\PHPMailer\PHPmailer; // PHPmailer s'utilise en faisant new PHPmailer()
+use \PHPMailer\PHPMailer\PHPmailer as mailer;   // PHPmailer s'utilise en faisant new mailer()
+
+// use peut s'utiliser en début de controleur ou de template 
+// (sans avoir déclaré de namespace)
+
+class classe_a {
+    // Ceci déclare la classe \utilitaires\espace1\classe_a
+
+    function essai() {
+
+        // Pour utiliser une classe du même espace de nom
+        $objet = new classe_b();
+
+        // Pour utiliser une classe à la racine
+        $date = new \dateTime();
+
+        // Une classe avec un chargement en relatif
+        $tool = new library\tools();
+
+        library\tools::essai();
+
+        // dans un autre espace de nom
+        $mail = new \PHPMailer\PHPMailer\PHPMailer();
+        $mail2 = new PHPMailer();
+
+    }
+
+
+}

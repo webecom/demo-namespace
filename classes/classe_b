@@ -1,0 +1,21 @@
+<?php 
+
+// Classe de démonstration dans un espace de noms
+
+
+namespace utilitaires\espace1;
+// L'instruction ci dessus indqiue que à chaque fois que l'on va adresser une classe 
+//    new classe();
+//    classe::...
+//    class classe {}
+// en fait on ira chercher la classe \utilitaires\espace1\classe
+// C'est une instruction qui s'applique au fichier
+
+
+
+class classe_b {
+    // Ceci déclare la classe \utilitaires\espace1\classe_b
+
+
+
+}
